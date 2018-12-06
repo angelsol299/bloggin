@@ -22,6 +22,7 @@ class Main extends Component {
     this.props.startLoadingPost();
     this.props.startLoadingComments();
     ComponentDidMount(this.setUser.bind(this));
+    this.props.startLoadingComments();
   }
 
   setUser(item) {
@@ -88,7 +89,13 @@ class Main extends Component {
         {this.state.user && (
           <Route
             path="/single/:id"
-            render={params => <Single {...this.props} {...params} />}
+            render={params => (
+              <Single
+                loading={this.state.loading}
+                {...this.props}
+                {...params}
+              />
+            )}
           />
         )}
       </div>

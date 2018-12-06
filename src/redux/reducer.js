@@ -12,6 +12,7 @@ function comments(state = {}, action) {
           [action.postId]: [...state[action.postId], action.comment]
         };
       }
+
     case "LOAD_COMMENTS":
       return action.comments;
 

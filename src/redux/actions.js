@@ -1,5 +1,4 @@
 import { database } from "../database/config";
-
 export function startAddingPost(post) {
   return dispatch => {
     return database
@@ -33,26 +32,10 @@ export function startLoadingPost() {
 }
 
 export function startRemovingPost(index, id) {
-  /* return dispatch => {
+  return dispatch => {
     return database
       .ref(`posts/${id}`)
       .remove()
-      .then(() => {
-        dispatch(removePost(index));
-      })
-      .catch(error => {
-        console.log(error);
-      });
-  }; */
-  const updates = {
-    [`posts/${id}`]: null,
-    [`comments/${id}`]: null
-  };
-
-  return dispatch => {
-    return database
-      .ref()
-      .update(updates)
       .then(() => {
         dispatch(removePost(index));
       })

@@ -19,7 +19,12 @@ class Comments extends Component {
           return <p key={index}> {comment} </p>;
         })}
         <form className="comment-form" onSubmit={this.handleSubmit}>
-          <input type="text" placeholder="comment" name="comment" />
+          <input
+            className="comment-input"
+            type="text"
+            placeholder="comment"
+            name="comment"
+          />
           <input type="submit" hidden />
         </form>
       </div>

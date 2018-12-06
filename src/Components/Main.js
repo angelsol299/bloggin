@@ -48,9 +48,6 @@ class Main extends Component {
   render() {
     return (
       <div>
-        <h1 className="main-title">
-          {this.state.user && <Link to="/"> Bloggin </Link>}
-        </h1>
         {!this.state.user && (
           <SignInForm
             email={this.state.email}
@@ -60,9 +57,13 @@ class Main extends Component {
             onRegister={this.onRegister}
           />
         )}
+
         {this.state.user && (
           <Header OnLogout={this.onLogout} state={this.state.user} />
         )}
+        <h1 className="main-title">
+          {this.state.user && <Link to="/"> Bloggin </Link>}
+        </h1>
         {this.state.user && (
           <Route
             exact

@@ -17,7 +17,7 @@ class PhotoWall extends Component {
         <br />
         <div className="button-class">
           <button
-            className="btn btn-success"
+            className="sort-button"
             onClick={() =>
               this.props.posts.sort(function(a, b) {
                 if (a < b) return -1;
@@ -30,7 +30,7 @@ class PhotoWall extends Component {
           </button>
           {"    "}
           <button
-            className="btn btn-success"
+            className="sort-button"
             onClick={() =>
               this.props.posts.sort(function(a, b) {
                 return a < b ? -1 : 1;

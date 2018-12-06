@@ -31,10 +31,10 @@ export class SignInForm extends Component {
                 />
               </div>
             </form>
-            <br />
+
             <div className="form-group d-flex justify-content-center">
               <button className="login-button" onClick={this.props.onLogin}>
-                Login
+                <strong> Login</strong>
               </button>
               <br />
               <button
@@ -49,9 +49,15 @@ export class SignInForm extends Component {
               <br />
               <br />
               <br />
-              <p style={{ fontSize: "17px" }}>
+              <p style={{ fontSize: "20px", color: "#2193b0" }}>
                 {" "}
-                Welcome to your main bloggin solution
+                Welcome to your blog
+              </p>
+              <p style={{ fontSize: "20px", color: "#2193b0" }}>
+                Where every day bloggin is a reality
+              </p>
+              <p style={{ fontSize: "20px", color: "#2193b0" }}>
+                Where your thoughts become your life
               </p>
             </div>
           </div>

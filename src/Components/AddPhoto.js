@@ -27,19 +27,19 @@ class AddPhoto extends Component {
       <div>
         <div className="form">
           <form onSubmit={this.handleSubmit}>
-            <input
-              type="text"
-              placeholder="Add a link of a photo"
-              name="link"
-            />
-            <select name="category" className="form-control">
-              <option>Life Style</option>
-              <option>Technology</option>
+            <select name="category" className="select-category">
+              <option className="text-select">Life Style</option>
+              <option className="text-select">Technology</option>
               <option>Love</option>
               <option>Travel</option>
               <option>Work</option>
             </select>
             <input type="text" placeholder="Desciption" name="description" />
+            <input
+              type="text"
+              placeholder="Add a link of a photo"
+              name="link"
+            />
             <button> Post </button>
           </form>
         </div>

@@ -11,11 +11,20 @@ p {
 /* Login page  */
 
 .header-content {
-  padding-bottom: 100px;
+  padding-bottom: 10px;
+  text-align: right;
+  margin-right: 20px;
 }
 
 .main-title {
   font-size: 8rem;
+  margin-top: -60px;
+}
+
+.select-category {
+  width: 360px;
+  margin-bottom: 20px;
+  height: 40px;
 }
 
 h1 {
@@ -66,20 +75,28 @@ h1 a:focus {
 }
 
 .login-button {
-  width: 200px;
+  width: 215px;
   margin-top: 10px;
   border-radius: 10px;
   color: #2193b0;
 }
 
+.sort-button {
+  border-radius: 10px;
+}
+
 .form-input {
-  width: 200px;
+  width: 210px;
   margin-top: 10px;
-  height: 25px;
+  height: 35px;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid;
+  color: #2193b0;
 }
 
 .form-input:hover {
-  border-color: #2193b0;
+  border-color: lightGrey;
 }
 
 .text-center1 {
@@ -190,7 +207,17 @@ body {
   border-bottom: 1px solid #d3d3d3;
   padding: 0.5rem 0;
 }
-.comment-form input,
+
+.comment-input {
+  width: 100%;
+  border: 0;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #d3d3d3;
+  outline: none;
+  resize: vertical;
+}
+
 .comment-form textarea {
   width: 100%;
   border: 0;
@@ -202,8 +229,7 @@ body {
 }
 
 .addIcon {
-  background: url("https://image.flaticon.com/icons/svg/60/60740.svg") center
-    no-repeat;
+  background: url("https://svgshare.com/i/9k6.svg") center no-repeat;
   background-size: contain;
   padding: 40px;
   display: table;
@@ -220,7 +246,7 @@ body {
 
 button,
 .button {
-  border: 2px solid #f2f2f2;
+  border: 2px solid lightGrey;
   background: none;
   flex-basis: 48%;
   display: inline-block;
@@ -229,7 +255,7 @@ button,
   padding: 5px;
   text-align: center;
   font-size: 15px;
-  color: darkblue;
+  color: #2193b0;
   transition: all 0.2s;
   box-sizing: padding-box;
 }
@@ -270,9 +296,9 @@ button:focus,
 .form input {
   font-family: sans-serif;
   outline: 0;
-  background: #f2f2f2;
+  background: white;
   width: 100%;
-  border: 0;
+  border: 1px solid darkGrey;
   margin: 0 0 15px;
   padding: 15px;
   box-sizing: border-box;
@@ -283,7 +309,7 @@ button:focus,
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #065784;
+  background: #2193b0;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -297,7 +323,7 @@ button:focus,
 .form button:hover,
 .form button:active,
 .form button:focus {
-  background: #7b8589;
+  background: darkGrey;
 }
 
 .loader {

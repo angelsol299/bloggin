@@ -4,7 +4,11 @@ export class LogoutButton extends Component {
   render() {
     return (
       <div>
-        <button className="btn btn-danger" onClick={this.props.onClick}>
+        <button
+          style={{ borderRadius: "10px", marginRight: "17px" }}
+          className="btn btn-danger"
+          onClick={this.props.onClick}
+        >
           Logout
         </button>
       </div>

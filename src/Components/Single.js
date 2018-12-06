@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Photo from "./Photo";
 import Comments from "./Comments";
+import Spinner from "./Spinner/Spinner";
 
 class Single extends Component {
   render() {

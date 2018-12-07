@@ -10,7 +10,7 @@ class PhotoWall extends Component {
   render() {
     const photo = this.props.posts;
     //nuevo
-    if (photo) {
+    if (<div className="photoGrid" />) {
       return (
         <div>
           <Link className="addIcon" to="/AddPhoto">
@@ -52,7 +52,7 @@ class PhotoWall extends Component {
         </div>
       );
     } else {
-      return <Spinner />;
+      return <p>loading...</p>;
     }
   }
 }

@@ -6,6 +6,7 @@ import { createStore, compose, applyMiddleware } from "redux";
 import rootReducer from "./redux/reducer";
 import { Provider } from "react-redux";
 import App from "./Components/App";
+import Main from "./Components/Main";
 import thunk from "redux-thunk";
 import { database } from "./database/config";
 

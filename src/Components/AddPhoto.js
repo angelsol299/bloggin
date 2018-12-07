@@ -10,13 +10,13 @@ class AddPhoto extends Component {
     const imageLink = event.target.elements.link.value;
     const description = event.target.elements.description.value;
     const category = event.target.elements.category.value;
-    const timeStamp = event.target.elements.category.value;
+    // const createdAt: new Date(timeStamp);
     const post = {
       id: Number(new Date()),
       description: description,
       imageLink: imageLink,
-      category: category,
-      timeStamp: timeStamp
+      category: category
+      // timeStamp: timeStamp
     };
     if (description && imageLink && category) {
       this.props.startAddingPost(post);

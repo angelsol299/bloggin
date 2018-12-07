@@ -24,7 +24,12 @@ p {
 .select-category {
   width: 360px;
   margin-bottom: 20px;
-  height: 40px;
+  height: 50px;
+  border: 1px solid darkGrey;
+}
+
+.select-category:hover {
+  border: 1px solid #2193b0;
 }
 
 h1 {
@@ -313,6 +318,11 @@ button:focus,
   padding: 15px;
   box-sizing: border-box;
   font-size: 14px;
+  border-radius: 10px;
+}
+
+.form input:hover {
+  border: 1px solid #2193b0;
 }
 
 .form button {
@@ -328,6 +338,7 @@ button:focus,
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .form button:hover,

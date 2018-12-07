@@ -8,8 +8,9 @@ import Spinner from "./Spinner/Spinner";
 
 class PhotoWall extends Component {
   render() {
+    const photo = this.props.posts;
     //nuevo
-    if (<Photo />) {
+    if (photo) {
       return (
         <div>
           <Link className="addIcon" to="/AddPhoto">
